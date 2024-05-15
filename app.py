@@ -12,7 +12,7 @@ w = WIDTH // num_cols
 print(num_cols, w)
 
 screen = pygame.display.set_mode((WIDTH, WIDTH))
-pygame.display.set_caption('Pygame Template')
+pygame.display.set_caption('Game of Life')
 clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 10)
 
@@ -129,7 +129,7 @@ while running:
             if event.key == pygame.K_p:
                 input("Pause")
 
-    screen.fill("white")  # Fill the screen with black
+    screen.fill("white")
     if loop != 0:
         for row in grid:
             for cell in row:
